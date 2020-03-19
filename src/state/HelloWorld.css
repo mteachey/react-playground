@@ -1,0 +1,22 @@
+/*CSS for HelloWorld.js*/
+
+button {
+    margin: 10px;
+    padding: 6px 16px;
+    font-size: 14px;
+}
+
+.button-container button:nth-child(1){
+    background-color:lightblue;
+}
+.button-container button:nth-child(2){
+    background-color:lightseagreen;
+}
+.button-container button:nth-child(3){
+    background-color:lightgreen;
+}
+
+.button-container button:hover{
+    background-color:#000;
+    color:#fff;
+}
