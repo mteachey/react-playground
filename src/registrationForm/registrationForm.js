@@ -1,15 +1,25 @@
 import React, {Component} from 'react';
 
-class registrationForm extends Component{
+class RegistrationForm extends Component{
+
+
+  handleSubmit(e) {
+    e.preventDefault();
+    console.log(`is this firing`);
+    }
+
 render () {
+    
+
     return (
-      <form className="registration">
+    <div>
+      <form className="registration" onSubmit={e => this.handleSubmit(e)}>
         <h2>Register</h2>
         <div className="registration__hint">* required field</div>  
         <div className="form-group">
           <label htmlFor="name">Name *</label>
           <input type="text" className="registration__control"
-            name="name" id="name"/>
+            name="name" ref={this.nameInput} id="name" defaultValue="Frank"/>
         </div>
         <div className="form-group">
            <label htmlFor="password">Password *</label>
@@ -32,8 +42,9 @@ render () {
          </button>
         </div>
       </form>
+    </div>
     )
   }
 }
 
-export default registrationForm;
+export default RegistrationForm;
