@@ -6,10 +6,12 @@ import './App.css';
 //import HelloWorld from './state/HelloWorld.js';
 //import Bomb from './state/Bomb.js';
 //import Roulette from './state/Roulette.js';
-import Tabs from './state/Tabs.js';
-import Accordian from './state/state-drills.js';
+//import Tabs from './state/Tabs.js';
+//import Accordian from './state/state-drills.js';
+//import DemonymApp from './demonymapp/demonymApp.js';
+import RegistrationForm from './registrationForm/registrationForm.js'
 
-const tabsProp = [
+/*const tabsProp = [
   { name: 'First tab',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque.' },
   { name: 'Second tab',
@@ -30,18 +32,20 @@ const sections = [
     title: 'Section 3',
     content: 'Animi amet cumque sint cupiditate officia ab voluptatibus libero optio et?',
   },
-]
+]*/
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <h1>React Playground</h1>
-        <Tabs tabs={tabsProp}/>
-        <Accordian sections={sections}/>             
+        <RegistrationForm/>
+                   
     </div>
     );
   }
 }
 
 export default App;
+// <Tabs tabs={tabsProp}/>
+//<Accordian sections={sections}/> 

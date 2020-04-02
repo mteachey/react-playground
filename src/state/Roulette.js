@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 export default class Roulette extends Component{
-    //chamber can be a number from 1-8
+    //defaults and initial 
     state={
        chamber : null,
        spinningTheChamber : false
@@ -19,18 +19,15 @@ export default class Roulette extends Component{
             spinningTheChamber : true
         })
 
-    this.timeout = setTimeout(()=>{
-       const randomChamber = Math.ceil(Math.random() * 8)
+        this.timeout = setTimeout(()=>{
+          const randomChamber = Math.ceil(Math.random() * 8)
     
-       this.setState({
-        chamber:randomChamber,
-        spinningTheChamber:false,
-       })
-  
+          this.setState({
+              chamber:randomChamber,
+              spinningTheChamber:false,
+            }) 
         },2000)
     }
-
-   
 
     renderDisplay()
     {
