@@ -12,7 +12,7 @@ render () {
     
 
     return (
-        <div>
+    <div>
       <form className="registration" onSubmit={e => this.handleSubmit(e)}>
         <h2>Register</h2>
         <div className="registration__hint">* required field</div>  
@@ -42,7 +42,7 @@ render () {
          </button>
         </div>
       </form>
-      </div>
+    </div>
     )
   }
 }
